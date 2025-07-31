@@ -159,10 +159,7 @@ body {
 
 /* NAVBAR STYLING */
 
-/* Note: The commented styling makes the navbar one-liner but the spacing is cramped.
-The used styling allows appropriate spacing but makes the navbar not one-liner */
-
-/* .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -175,47 +172,27 @@ The used styling allows appropriate spacing but makes the navbar not one-liner *
   border: none;
   border-radius: 4px;
   padding: 0 10px;
+  overflow: hidden;
 }
 
 .item_container {
   display: flex;
-}
-
-.navbar_item {
-  padding: 0.75%;
-  list-style-type: none;
-} */
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
+  flex-wrap: nowrap;
   align-items: center;
-  margin: 0 10px;
-  position: relative;
-  top: 30px;
-  background-color: #ffffff26;
-  width: auto;
-  min-height: 36px;
-  border: none;
-  border-radius: 4px;
-  padding: 0 10px;
-}
-
-.item_container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0 20px;
+  gap: 0 18px;
   flex: 1;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
+  overflow: hidden;
 }
 
 .navbar_item {
-  padding: 0.75%;
+  padding: 6px;
   list-style-type: none;
-  flex-shrink: 0;
+  flex-shrink: 1;
   white-space: nowrap;
+  min-width: 60px;
+  max-width: 120px;
 }
 
 .navbar_link {
@@ -223,7 +200,7 @@ The used styling allows appropriate spacing but makes the navbar not one-liner *
   align-items: center;
   text-decoration: none;
   color: #ffffff;
-  gap: 5px;
+  gap: 4px;
   white-space: nowrap;
 }
 
@@ -252,8 +229,10 @@ The used styling allows appropriate spacing but makes the navbar not one-liner *
 }
 
 .navbar_text {
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 0.1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* HERO SECTION STYLING */
@@ -270,4 +249,70 @@ The used styling allows appropriate spacing but makes the navbar not one-liner *
   object-fit: cover;
   border: none;
   border-radius: 8px;
+}
+
+.options {
+  position: relative;
+  top: 102px;
+  margin: 0 157px;
+}
+
+.selection {
+  position: relative;
+  top: -50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  flex-wrap: nowrap;
+}
+
+.selection_item,
+.casino_item {
+  flex: 1;
+}
+
+.selection_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* CASINO SELECTION STYLING */
+.casino_selection {
+  position: relative;
+  top: -50px;
+  margin-top: 10px;
+}
+
+.selection_title {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.casino_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 5px 0 0;
+  flex-wrap: nowrap;
+}
+
+.casino_item {
+  flex: 1;
+}
+
+.item_img {
+  width: 100%;
+  height: 180px;
+  border: none;
+  border-radius: 4px;
+  object-fit: cover;
 }
