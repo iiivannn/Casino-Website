@@ -519,3 +519,11 @@ footer {
   transform: scale(1.01);
   filter: brightness(1.1) drop-shadow(0 0 15px rgba(179, 85, 255, 1));
 }
+
+/* GAME STAGE STYLING */
+.stage_img {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  padding-right: 15px;
+}
